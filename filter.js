@@ -502,9 +502,9 @@ const items = [{
 ]
 
 const filteredItems = items.filter((item) => {
-    // !normally you'd comment out the let result and just return it
-    let result = item.Count >= 100;
-    console.log(result);
-    return result;
+    return item.Count >= 2000
 })
+
+console.log(items);
+console.log(filteredItems);
 
