@@ -501,7 +501,9 @@ const items = [{
 }
 ]
 
-// for loop through an array and return what you want out of it.
-items.forEach((item) => {
-    console.log(item.Word);
+// tests for a value and finds the first one that's there
+const isLessThan = items.some((item) => {
+    return item.Count <= 2000;
 });
+
+console.log(isLessThan);
