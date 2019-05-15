@@ -501,11 +501,11 @@ const items = [{
 }
 ]
 
-// filter takes the original array and returns a new array with just the fitlered output
-const filteredItems = items.filter((item) => {
-    return item.Count >= 2000
+// map takes the original array and returns a new array with just the parts you want
+const itemWords = items.map((item) => {
+    return item.Count
 })
 
 console.log(items);
-console.log(filteredItems);
+console.log(itemWords);
 
