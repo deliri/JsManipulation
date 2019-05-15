@@ -501,11 +501,13 @@ const items = [{
 }
 ]
 
-// map takes the original array and returns a new array with just the parts you want
-const itemWords = items.map((item) => {
-    return item.Count;
+// Find takes the original array and returns a new array with just the parts you want found
+// True if there, false if not
+// ! it only finds the FIRST item that's true
+const findItem = items.map((item) => {
+    return item.Word === "business";
 });
 
 console.log(items);
-console.log(itemWords);
+console.log(findItem);
 

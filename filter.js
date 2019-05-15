@@ -503,8 +503,8 @@ const items = [{
 
 // filter takes the original array and returns a new array with just the fitlered output
 const filteredItems = items.filter((item) => {
-    return item.Count >= 2000
-})
+    return item.Count >= 2000;
+});
 
 console.log(items);
 console.log(filteredItems);

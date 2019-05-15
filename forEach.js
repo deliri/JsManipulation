@@ -501,11 +501,6 @@ const items = [{
 }
 ]
 
-// map takes the original array and returns a new array with just the parts you want
-const itemWords = items.map((item) => {
-    return item.Count;
+items.forEach((item) => {
+    console.log(item.Word);
 });
-
-console.log(items);
-console.log(itemWords);
-
